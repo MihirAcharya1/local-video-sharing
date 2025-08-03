@@ -3,7 +3,7 @@ import axios from 'axios';
 import { FaUpload, FaTrash, FaEdit, FaPlayCircle } from 'react-icons/fa';
 import { IoSettings } from 'react-icons/io5';
 
-const API_BASE = 'https://7c5efa0c634b.ngrok-free.app';
+const API_BASE = 'https://1defaa8c8834.ngrok-free.app';
 const UPLOAD_PASSWORD = '1234';
 
 export default function App() {
@@ -214,7 +214,7 @@ export default function App() {
         <p>Loading videos...</p>
       ) : (
         <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
-          {videoList.map((video) => (
+          {videoList?.map((video) => (
             <div key={video.name} style={{ border: '1px solid #ccc', borderRadius: 8, padding: 10 }}>
               {video?.view ? (
                 <video controls src={`${apiUrl}${video.url}`} style={{ width: '100%', marginTop: 8 }} />
