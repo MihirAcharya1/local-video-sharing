@@ -3,7 +3,7 @@ import axios from 'axios';
 import { FaUpload, FaTrash, FaEdit, FaPlayCircle } from 'react-icons/fa';
 import { IoSettings } from 'react-icons/io5';
 
-const API_BASE = 'https://192.168.31.89:5000';
+const API_BASE = 'https://7c5efa0c634b.ngrok-free.app/';
 const UPLOAD_PASSWORD = '1234';
 
 export default function App() {
