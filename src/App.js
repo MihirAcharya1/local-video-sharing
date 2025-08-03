@@ -3,7 +3,7 @@ import axios from 'axios';
 import { FaUpload, FaTrash, FaEdit, FaPlayCircle } from 'react-icons/fa';
 import { IoSettings } from 'react-icons/io5';
 
-const API_BASE = 'http://192.168.31.89:5000';
+const API_BASE = 'https://192.168.31.89:5000';
 const UPLOAD_PASSWORD = '1234';
 
 export default function App() {
@@ -18,10 +18,10 @@ export default function App() {
   const [errorMsg, setErrorMsg] = useState('');
   const [ipList, setIplist] = useState([{
     name: 'Jio AirFiber',
-    value: 'http://192.168.31.89:5000'
+    value: 'https://192.168.31.89:5000'
   }, {
     name: 'IQOO 11 - hotspot',
-    value: 'http://10.74.173.210:5000'
+    value: 'https://10.74.173.210:5000'
   }])
 
   const fetchVideoList = async () => {
